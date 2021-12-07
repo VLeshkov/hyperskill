@@ -1,12 +1,12 @@
 function playSound(keyName) {
   let audio = document.createElement('AUDIO');
-  audio.src = `audio/${keyName}.mp3`;
+  audio.src = `assets/audio/${keyName}.mp3`;
   audio.play();
 }
 
 function changeKeyColor(keyIndex, initialColor) {
   let keyPressed = document.getElementsByTagName('kbd')[keyIndex];
-  keyPressed.style.background = 'red';
+  keyPressed.style.background = 'gray';
 
   document.addEventListener('keyup', function() {
     if (initialColor === 'white') {
