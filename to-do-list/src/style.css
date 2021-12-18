@@ -1,3 +1,46 @@
 .checked {
     text-decoration: line-through;
 }
+
+.main-container {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  text-align: center;
+}
+
+#task-list {
+  padding: 0px;
+}
+
+#input-task {
+  margin: 10px 0px;
+}
+
+#add-task-button {
+  margin-bottom: 15px;
+}
+
+li {
+  margin: 0px;
+  list-style: none;
+}
+
+.delete-btn {
+  background-image: url('svg/x-circle.svg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-color: transparent;
+  height: 25px;
+  width: 25px;
+  border: none;
+}
+
+.delete-btn:hover {
+  background-image: url('svg/x-circle-fill.svg');
+}

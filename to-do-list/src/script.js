@@ -19,9 +19,10 @@ let lastTaskId = taskList.length;
 
 for (let i = 0; i < taskList.length; i++) {
   if (taskList[i]['isDeleted'] === 'false') {
+
     let taskHTML = `<input type="checkbox" id="${i}">
-                <span class="task">${taskList[i]['taskString']}</span>
-                <button class="delete-btn">Delete</button>`;
+                    <span class="task">${taskList[i]['taskString']}</span>
+                    <button class="delete-btn"></button>`;
     let newLi = document.createElement('li');
     newLi.innerHTML = taskHTML;
 
@@ -77,8 +78,8 @@ addTaskButton.addEventListener('click', function() {
 
     let newTask = document.createElement('li');
     newTask.innerHTML = `<input type="checkbox" id="${lastTaskId}">
-                         <span class="task">${taskText.value}</span>
-                         <button class="delete-btn">Delete</button>`;
+                          <span class="task">${taskText.value}</span>
+                        <button class="delete-btn"></button>`;
 
     taskElements.append(newTask);
 
